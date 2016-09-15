@@ -1,0 +1,367 @@
+{
+  "person":
+  {
+    "properties":
+    {
+      "tags":
+      {
+        "type": "string"
+      },
+      "status":
+      {
+        "type": "string"
+      },
+      "interests":
+      {
+        "type": "string"
+      },
+      "organizations":
+      {
+        "type" : "nested",
+        "properties":
+        {
+          "title":
+          {
+            "type": "string"
+          },
+          "name":
+          {
+            "type": "string"
+          }
+        }
+      },
+      "_name":
+      {
+        "type": "string"
+      },
+      "emails":
+      {
+        "type" : "nested",
+        "properties":
+        {
+          "primary":
+          {
+            "type": "boolean"
+          },
+          "value":
+          {
+            "type": "string"
+          },
+          "type":
+          {
+            "type": "string"
+          }
+        }
+      },
+      "phoneNumbers":
+      {
+        "type" : "nested",
+        "properties":
+        {
+          "primary":
+          {
+            "type": "boolean"
+          },
+          "value":
+          {
+            "type": "string"
+          },
+          "type":
+          {
+            "type": "string"
+          }
+        }
+      },
+      "networkPresence":
+      {
+        "type": "string"
+      },
+      "aboutMe":
+      {
+        "type": "string"
+      },
+      "languagesSpoken":
+      {
+        "type": "string"
+      },
+      "id":
+      {
+        "type": "string"
+      },
+      "profileUrl":
+      {
+        "type": "string"
+      },
+      "thumbnailUrl":
+      {
+        "type": "string"
+      },
+      "name":
+      {
+        "type" : "nested",
+        "properties":
+        {
+          "formatted":
+          {
+            "type": "string"
+          },
+          "familyName":
+          {
+            "type": "string"
+          },
+          "givenName":
+          {
+            "type": "string"
+          }
+        }
+      },
+      "displayName":
+      {
+        "type": "string"
+      }
+    }
+  },
+  "activity":
+  {
+    "properties":
+    {
+      "id":
+      {
+        "type": "string"
+      },
+      "content":
+      {
+        "type": "string"
+      },
+      "title":
+      {
+        "type": "string"
+      },
+      "verb":
+      {
+        "type": "string"
+      },
+      "target":
+      {
+        "type" : "nested",
+        "properties":
+        {
+          "id":
+          {
+            "type": "string"
+          },
+          "content":
+          {
+            "type": "string"
+          },
+          "_name":
+          {
+            "type": "string"
+          },
+          "displayName":
+          {
+            "type": "string"
+          },
+          "objectType":
+          {
+            "type": "string"
+          },
+          "url":
+          {
+            "type": "string"
+          }
+        }
+      },
+      "origin":
+      {
+        "type": "string"
+      },
+      "generator":
+      {
+        "type" : "nested",
+        "properties":
+        {
+          "id":
+          {
+            "type": "string"
+          },
+          "_name":
+          {
+            "type": "string"
+          },
+          "displayName":
+          {
+            "type": "string"
+          },
+          "objectType":
+          {
+            "type": "string"
+          },
+          "url":
+          {
+            "type": "string"
+          }
+        }
+      },
+      "_name":
+      {
+        "type": "string"
+      },
+      "provider":
+      {
+        "type" : "nested",
+        "properties":
+        {
+          "id":
+          {
+            "type": "string"
+          },
+          "_name":
+          {
+            "type": "string"
+          },
+          "displayName":
+          {
+            "type": "string"
+          },
+          "objectType":
+          {
+            "type": "string"
+          },
+          "url":
+          {
+            "type": "string"
+          }
+        }
+      },
+      "object":
+      {
+        "type" : "nested",
+        "properties":
+        {
+          "id":
+          {
+            "type": "string"
+          },
+          "content":
+          {
+            "type": "string"
+          },
+          "_name":
+          {
+            "type": "string"
+          },
+          "displayName":
+          {
+            "type": "string"
+          },
+          "objectType":
+          {
+            "type": "string"
+          },
+          "url":
+          {
+            "type": "string"
+          }
+        }
+      },
+      "actor":
+      {
+        "type" : "nested",
+        "properties":
+        {
+          "id":
+          {
+            "type": "string"
+          },
+          "_name":
+          {
+            "type": "string"
+          },
+          "displayName":
+          {
+            "type": "string"
+          },
+          "objectType":
+          {
+            "type": "string"
+          },
+          "url":
+          {
+            "type": "string"
+          }
+        }
+      },
+      "published":
+      {
+        "format": "dateOptionalTime",
+        "type": "date"
+      },
+      "whitelist":
+      {
+        "type": "string"
+      }
+    }
+  },
+  "message":
+  {
+    "properties":
+    {
+      "id":
+      {
+        "type": "string"
+      },
+      "body":
+      {
+        "type": "string"
+      },
+      "title":
+      {
+        "type": "string"
+      },
+      "updated":
+      {
+        "type": "long"
+      },
+      "recipients":
+      {
+        "type": "string"
+      },
+      "urls":
+      {
+        "type" : "nested",
+        "properties":
+        {
+          "linkText":
+          {
+            "type": "string"
+          },
+          "value":
+          {
+            "type": "string"
+          },
+          "type":
+          {
+            "type": "string"
+          }
+        }
+      },
+      "origin":
+      {
+        "type": "string"
+      },
+      "senderId":
+      {
+        "type": "string"
+      },
+      "type":
+      {
+        "type": "string"
+      },
+      "timeSent":
+      {
+        "type": "long"
+      }
+    }
+  }
+}
