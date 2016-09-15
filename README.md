@@ -1,0 +1,1 @@
+# shindig-es-plugin
